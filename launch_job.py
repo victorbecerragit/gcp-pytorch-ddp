@@ -11,8 +11,8 @@ BUCKET_NAME = os.environ.get("BUCKET_NAME", f"{PROJECT_ID}-pytorch-ddp")
 def create_sdist():
     """Builds a source distribution package."""
     print("Building Python source distribution...")
-    os.system("python setup.py sdist --formats=gztar")
-    return "dist/pytorch_ddp_trainer-0.1.tar.gz"
+    os.system("uv build --sdist")
+    return "dist/pytorch_ddp_trainer-0.1.0.tar.gz"
 
 def upload_to_gcs(local_path, target_blob):
     """Uploads local archive to Google Cloud Storage."""

@@ -1,4 +1,4 @@
-# Multi-Node PyTorch Distributed Training on GCP Vertex AI
+# Multi-Node PyTorch Distributed Training on GCP - Agent Platform (formerly Vertex AI)
 
 This repository implements multi-node PyTorch Distributed Data Parallel (DDP) training using NVIDIA L4 GPUs on Google Cloud Vertex AI with Spot VMs.
 
